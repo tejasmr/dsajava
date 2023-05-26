@@ -9,7 +9,7 @@ public class ArrayTest {
     @Test 
     public void createEmptyArray() {
         Array array = new Array(0);
-        assertNotEqual(array, null);
-        assertEqual(array.getLength(), 0);
+        assertFalse(array == null);
+        assertEquals(array.getLength(), 0);
     }
 }
