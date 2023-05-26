@@ -12,4 +12,11 @@ public class Array {
     public int getLength() {
         return this.length;
     }
+
+    public int get(int index) throws ArrayIndexOutOfBoundsException {
+        if (index >= 0 && index < length) {
+            return this.container[index];
+        }
+        throw new ArrayIndexOutOfBoundsException();
+    }
 }
